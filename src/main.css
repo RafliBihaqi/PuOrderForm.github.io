@@ -1,0 +1,105 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+}
+
+/* Navigation */
+nav {
+  background-color: #B22222;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Form and inputs */
+.container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+button,
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button,
+input[type="submit"] {
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #e21313;
+}
+
+/* "Press this if error" button */
+#whatsappForm {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#whatsappForm input[type="submit"] {
+  background-color: #28a745;
+  margin-top: 10px;
+}
+
+#whatsappForm input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+  background-color: #B22222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  display: inline-block;
+  margin: 5px 10px; /* Memberi sedikit ruang antar teks */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 20px;
+  }
+
+  footer {
+    height: auto;
+  }
+}
